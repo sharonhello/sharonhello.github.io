@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+ 
+    $(function() {
+	$(".visible4").click(function() {
+	    $('.invisible4').toggleClass("show");
+	  });  
+	});
+
+    var i = 0,images = ["images/azbook/aztalkingtomyself2.gif",
+    "images/azbook/azbook_01.JPG",
+    "images/azbook/azbook_03.JPG",
+    "images/azbook/azbook_04.JPG",
+    "images/azbook/azbook_07.JPG",
+    "images/azbook/azbook_08.JPG",
+    "images/azbook/azbook_09.JPG",
+    "images/azbook/azbook_10.JPG",
+    "images/azbook/azbook_11.JPG",
+    "images/azbook/azbook_02.JPG",
+    "images/azbook/azbook_14.JPG",
+    "images/azbook/azbook_15.JPG",
+    "images/azbook/azbook_19.JPG",
+    "images/azbook/azbook_20.JPG",
+                             ];
+                            
+          function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
+
+
+
+    </script>
+    <title>attention & distraction</title>
+</head>
+<body class="editorials">
+    <header class="workheader">
+<h2><a href="index.html">Sharon Zhong</a></h2>
+<h2><a href="about.html">About & Contact</a></h2>
+    </header>
+    <nav class="contentnav">
+            <a href="attention.html"><i><span>◄ Prev:</span> Attention & Distraction</i></a>
+
+    <a href="wttdt.html"><i><span>► Next:</span> Welcome to the Digital Times</i></a>
+</nav>
+<h2 class="intro2">A—Z: Talking to Myself</h2>
+ <div class="intro">
+        <p class="intro1">Editorial design</p>
+        <div id="slider">   
+            <img src="images/azbook/aztalkingtomyself2.gif" width="100%" id="slide">
+            <div class="buttons">
+            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
+            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
+        </div>
+    </div>
+           
+        <p class="visible4">
+            <i> see info</i> 
+         </p>
+         <div class="invisible4 hide">
+                  <p>7" x 10" lasper on paper <br>60 p. typefaces:</p>
+                  <p class="intro3">(4/20/20—Crisis quality documentation)<br><br>
+                        In the age of information & technology where are we are submerged in an all immersive digital environment; everything is fighting for your attention, from your phone to the moving ads on the bus to the chips you snack on. Content these days has to be fast to keep the viewer engaged, in a short amount of time, “snack-able” in a way. The reserach comes in the form of a bag of chips, with the table of contents.</p>
+                      
+                    </div>
+
+</div>
+<nav>
+
+</nav>
+</body>
+</html>

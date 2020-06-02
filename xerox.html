@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+ 
+    $(function() {
+	$(".visible4").click(function() {
+	    $('.invisible4').toggleClass("show");
+	  });  
+	});
+
+    var i = 0,images = ["images/drawingxerox/drawingwxerox1.jpg",
+    "images/drawingxerox/drawingwxerox2.jpg",
+ 
+                             ];
+                            
+          function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
+
+
+
+    </script>
+    <title>drawing with xerox</title>
+</head>
+<body>
+    <header class="workheader">
+<h2><a href="index.html">Sharon Zhong</a></h2>
+<h2><a href="about.html">About & Contact</a></h2>
+    </header>
+    <nav class="contentnav">
+            <a href="mediummessage.html"><i><span>◄ Prev:</span> An exploration of mediums</i></a>
+
+    <a href="arkangel.html"><i><span>► Next:</span> A film analysis</i></a>
+</nav>
+<h2 class="intro2">Drawing with Xerox</h2>
+ <div class="intro">
+        <p class="intro1">Xerox, print, editorial</p>
+        <div id="slider">   
+            <img src="images/drawingxerox/drawingwxerox1.jpg" width="100%" id="slide">
+            <div class="buttons">
+            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
+            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
+        </div>
+    </div>
+           
+        <p class="visible4">
+            <i> see info</i> 
+         </p>
+         <div class="invisible4 hide">
+                  <p>various paper dimension <br>Self intiniated</p>
+                  <p class="intro3">
+                      Documentation in progress<br><br>
+                        Experiments in science refers to a test with an unpredictable outcome, to further advance research and put more context or knowledge onto the table; where as when an experiment in art refers to the idea that it supposed to be bad or it is something you are only testing.
+<br><br>
+                        My exploration with the photocopier started out with initial experimentation of how to use the Xerox machine, things I tested out were:
+                  </p>
+                  <p>
+                       1.   What happens when I have the cover all the way up / half up / completely down<br>
+                      2.    What happens when I move an object along with a scanner / against it<br>
+                      3.    Is there a certain movement I make to produce a certain curve<br>
+                     4.    Can certain curves possibly be letter forms
+                  </p>
+                      
+                    </div>
+
+</div>
+<nav>
+
+</nav>
+</body>
+</html>

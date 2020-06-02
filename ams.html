@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+ 
+    $(function() {
+	$(".visible4").click(function() {
+	    $('.invisible4').toggleClass("show");
+	  });  
+	});
+
+    var i = 0,images = ["images/misc/misc_03.jpg",
+        
+
+                             ];
+                            
+          function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
+
+
+
+    </script>
+    <title>poster 4 goggin</title>
+</head>
+<body>
+    <header class="workheader">
+<h2><a href="index.html">Sharon Zhong</a></h2>
+<h2><a href="about.html">About & Contact</a></h2>
+    </header>
+    <nav class="contentnav">
+            <a href="gdnow.html"><i><span>► Next:</span> Graphic Design: Now in Process</i></a>
+
+</nav>
+<h2 class="intro2">Meetin Irma Boom</h2>
+ <div class="intro">
+        <p class="intro1">Documentation</p>
+        <div id="slider">   
+            <img src="images/misc/irma_01.jpg" width="40%" >
+            <img src="images/home/photowirmaboom.JPG" width="48%" >
+           
+        </div>
+    </div>
+           
+        <p class="visible4">
+            <i> see info</i> 
+         </p>
+         <div class="invisible4 hide">
+                  <p>Lectures by Irma Boom</p>
+                  <p class="intro3">In 2018, <a href="https://en.wikipedia.org/wiki/Irma_Boom" target="_blank">Irma Boom </a>came to Harvard GSD to give an artist lecture. Me and my friends went up to her and left with this photo (1). In 2019 my university organized a AMS design workshop and we were able to meet Irma again, and this time in her office(2)! Holy Shit.</p>
+                      
+                    </div>
+
+                    <h2 class="intro2">Sexyland Workshop</h2>
+                    <div class="intro">
+                           <p class="intro1">Spraypaint mural</p>
+                           <div id="slider">   
+                               <img src="images/misc/sexyland_01.jpg" width="48%" id="slide">
+                               <img src="images/misc/sexyland_02.jpg" width="48%" id="slide">
+                               <div class="buttons">
+                            
+                           </div>
+                       </div>
+                              
+                           <p class="visible4">
+                               <i> see info</i> 
+                            </p>
+                            <div class="invisible4 hide">
+                                     <p>Workshop, Mural, Spraypaint<br>A club in Amsterdam</p>
+                                     <p class="intro3">Mural Workshop with Job Wouters. Sociëteit Sexyland is a conceptual club at the NDSM shipyard. Every day, 365 days a year, the club has a different owner. The owner of the day can then decide what the club will look like.</p>
+                                         
+                                       </div>
+                   
+                   </div>
+
+</body>
+</html>

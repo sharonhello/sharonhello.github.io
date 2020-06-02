@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+ 
+    $(function() {
+	$(".visible4").click(function() {
+	    $('.invisible4').toggleClass("show");
+	  });  
+	});
+
+    var i = 0,images = ["images/arkangelwreck/arkangel_01.JPG",
+
+    "images/arkangelwreck/arkangel_05.JPG",
+    "images/arkangelwreck/arkangel_06.JPG",
+    "images/arkangelwreck/arkangel_07.JPG",
+    "images/arkangelwreck/arkangel_10.JPG",
+    "images/arkangelwreck/arkangel_11.JPG",
+ 
+ 
+                             ];
+                            
+          function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
+
+
+
+    </script>
+    <title>van's but sharon</title>
+</head>
+<body>
+    <header class="workheader">
+<h2><a href="index.html">Sharon Zhong</a></h2>
+<h2><a href="about.html">About & Contact</a></h2>
+    </header>
+    <nav class="contentnav">
+            <a href="xerox.html"><i><span>◄ Prev:</span> The Xerox Machine</i></a>
+
+    <a href="shans.html"><i><span>► Next:</span> Van's but Sharon, so Shan's</i></a>
+</nav>
+<h2 class="intro2">Arkangel x Wreck</h2>
+ <div class="intro">
+        <p class="intro1">Postcards, print</p>
+        <div id="slider">   
+            <img src="images/arkangelwreck/arkangel_01.JPG" width="100%" id="slide">
+            <div class="buttons">
+            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
+            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
+        </div>
+    </div>
+        <p class="visible4">
+            <i> see info</i> 
+         </p>
+         <div class="invisible4 hide">
+                  <p>Print, postacrds <br>
+                    6 x 9 laser printed on eggshell 90g </p>
+                  <p class="intro3">FIlm analysis of 2 movies: Arkangel (black mirrior) and Wreck it Ralph, both with completely different tones about insecruity and control. Represented by the contrasting typefaces and a tag line asking, “what is something you wish you had control of?”
+<br><br>
+                    10 indiviual postcards were created from the idea of censoring; also be put together to make a titled poster.</p>
+                      
+                    </div>
+
+</div>
+<nav>
+
+</nav>
+</body>
+</html>

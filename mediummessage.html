@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+ 
+    $(function() {
+	$(".visible4").click(function() {
+	    $('.invisible4').toggleClass("show");
+	  });  
+	});
+
+    var i = 0,images = ["images/mediummessage/mcluhan_01.gif",
+
+ 
+                             ];
+                            
+          function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
+
+
+
+    </script>
+    <title>the medium is the message</title>
+</head>
+<body>
+    <header class="workheader">
+<h2><a href="index.html">Sharon Zhong</a></h2>
+<h2><a href="about.html">About & Contact</a></h2>
+    </header>
+    <nav class="contentnav">
+            <a href="sakanaya.html"><i><span>◄ Prev:</span> A flexable brand mark</i></a>
+
+    <a href="xerox.html"><i><span>► Next:</span> The Xerox Machine</i></a>
+</nav>
+<h2 class="intro2">The Medium is the Message</h2>
+ <div class="intro">
+        <p class="intro1">Poster design, lithography, print</p>
+        <div id="slider">   
+            <img src="images/mediummessage/mcluhan_01.gif" width="100%" id="slide">
+            <div class="buttons">
+            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
+            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
+        </div>
+    </div>
+           
+        <p class="visible4">
+            <i> see info</i> 
+         </p>
+         <div class="invisible4 hide">
+                  <p>24" x 36" inkjet on matte coated paper <br>3 part project, self intiatied</p>
+                  <p class="intro3">This project is closely tied to Drawing with Xerox. The project explores the ideas of Marshall McLuhan’s <i>The Medium is the Massage</i>, form as content; spanning over a varitey of medium all starting from the book itself. A poster was created from the tiling of the whole book. Then printed onto shirts on a rolling press with a xerox gum tranfer. The shirts were then later worn by models and photographed, and then put back into a publication.
+<br>
+<br>
+                        This project talks about how medium affects the way content is looked at, at the same time exploring different methods of printing the same thing.</p>
+                      
+                    </div>
+                    <div class="section2">
+                            <p>part a: poster</p>
+                            <img src="images/mediummessage/mcluhan_05.jpg"width="48%">
+                            <img src="images/mediummessage/mcluhan_05.jpg"width="48%">
+
+                            <p>part b: appearl, lithography</p>
+                            <img src="images/mediummessage/mcluhan_02.jpg"width="100%">
+
+                            <img src="images/mediummessage/mcluhan_04.jpg"width="48%">
+                            <img src="images/mediummessage/mcluhan_07.jpg"width="48%">
+
+                            <p>part c: editorial, art direction (documentation in process)</p>
+                            <img src="images/mediummessage/mcluhan_07.jpg"width="48%">
+                            <img src="images/mediummessage/mcluhan_07.jpg"width="48%">
+
+                            </div>
+</div>
+
+
+<nav>
+
+</nav>
+</body>
+</html>

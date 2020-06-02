@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+ 
+    $(function() {
+	$(".visible4").click(function() {
+	    $('.invisible4').toggleClass("show");
+	  });  
+	});
+
+    var i = 0,images = ["images/wttdt/newscover.jpg",
+    "images/wttdt/wttdt_01.png",
+    "images/wttdt/wttdt_02.png",
+    "images/wttdt/wttdt_03.png",
+    "images/wttdt/wttdt_04.png",
+    "images/wttdt/wttdt_06.JPG",
+    "images/wttdt/wttdt_07.JPG",
+    "images/wttdt/wttdt_09.JPG",
+     ];
+                            
+          function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
+
+
+
+    </script>
+    <title>welcome to the digital times</title>
+</head>
+<body>
+    <header class="workheader">
+<h2><a href="index.html">Sharon Zhong</a></h2>
+<h2><a href="about.html">About & Contact</a></h2>
+    </header>
+    <nav class="contentnav">
+            <a href="az.html"><i><span>◄ Prev:</span> A—Z: Talking to Myself</i></a>
+
+    <a href="goggin.html"><i><span>► Next:</span> A poster for James Goggin</i></a>
+</nav>
+<h2 class="intro2">Welcome to the Digital Times</h2>
+ <div class="intro">
+        <p class="intro1">Editorial design</p>
+        <div id="slider">   
+            <img src="images/wttdt/newscover.jpg" width="100%" id="slide">
+            <div class="buttons">
+            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
+            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
+        </div>
+    </div>
+           
+        <p class="visible4">
+            <i> see info</i> 
+         </p>
+         <div class="invisible4 hide">
+                  <p>11" x 17" laser on newsprint<br>10p. typeface: arial narrow</p>
+                  <p class="intro3">This newspaper is a response to Neil Postman's theory about the medium of television, and how it is sometimes not suited for sophisticated topics like news. Because it is more or entertainment and a flash flood of information it is too much for you to take in seriously. WttDT is a collection of articles that speak to Postman’s theory jutxaposted with a digital collage of imagery overload.</p>
+                    </div>
+
+</div>
+<nav>
+
+</nav>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+ 
+    $(function() {
+	$(".visible4").click(function() {
+	    $('.invisible4').toggleClass("show");
+	  });  
+	});
+
+    var i = 0,images = ["images/attention/attentiondistraction.png",
+    "images/attention/attention&distraction_interior_00.JPG",
+    "images/attention/attention&distraction_interior_01.JPG",
+    "images/attention/attention&distraction_interior_02.JPG",
+    "images/attention/attention&distraction_interior_04.JPG",
+    "images/attention/attention&distraction_interior_05.JPG",
+    "images/attention/attention&distraction_interior_06.JPG",
+    "images/attention/attention&distraction_interior_07.JPG",
+    "images/attention/attention&distraction_interior_08.JPG",
+    "images/attention/attention&distraction_interior_09.JPG",
+
+ 
+                             ];
+                            
+          function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
+
+
+
+    </script>
+    <title>attention & distraction</title>
+</head>
+<body class="editorials">
+    <header class="workheader">
+<h2><a href="index.html">Sharon Zhong</a></h2>
+<h2><a href="about.html">About & Contact</a></h2>
+    </header>
+    <nav class="contentnav">
+            <a href="shans.html"><i><span>◄ Prev:</span> Van's but Sharon so Shan's</i></a>
+
+    <a href="az.html"><i><span>► Next:</span> A—Z: Talking to Myself</i></a>
+</nav>
+<h2 class="intro2">Attention & Distraction Research Book</h2>
+ <div class="intro">
+        <p class="intro1">Editorial design</p>
+        <div id="slider">   
+            <img src="images/attention/attentiondistraction.png" width="100%" id="slide">
+            <div class="buttons">
+            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
+            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
+        </div>
+    </div>
+           
+        <p class="visible4">
+            <i> see info</i> 
+         </p>
+         <div class="invisible4 hide">
+                  <p>7" x 10" lasper on paper <br>60 p. typefaces:</p>
+                  <p class="intro3">(4/20/20—Crisis quality documentation)<br><br>
+                        In the age of information & technology where are we are submerged in an all immersive digital environment; everything is fighting for your attention, from your phone to the moving ads on the bus to the chips you snack on. Content these days has to be fast to keep the viewer engaged, in a short amount of time, “snack-able” in a way. The reserach comes in the form of a bag of chips, with the table of contents.</p>
+                      
+                    </div>
+
+</div>
+<nav>
+
+</nav>
+</body>
+</html>

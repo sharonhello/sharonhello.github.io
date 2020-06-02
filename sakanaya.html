@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+ 
+    $(function() {
+	$(".visible4").click(function() {
+	    $('.invisible4').toggleClass("show");
+	  });  
+	});
+
+    var i = 0,images = ["images/sakanaya/sakanayalogoheading 2.gif",
+    "images/sakanaya/saknayamark.png",
+    "images/sakanaya/letterhead.jpg",
+    "images/sakanaya/sakanayabusinesscards1.jpg", 
+    "images/sakanaya/kitchen.png", 
+    "images/sakanaya/shirts.png",
+    "images/sakanaya/sakanaya_billboard.jpg",
+
+                             ];
+                            
+          function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
+
+
+
+    </script>
+    <title>sakanaya</title>
+</head>
+<body>
+    <header class="workheader">
+<h2><a href="index.html">Sharon Zhong</a></h2>
+<h2><a href="about.html">About & Contact</a></h2>
+    </header>
+    <nav class="contentnav">
+            <a href="maskglovessoap.html"><i><span>◄ Prev:</span> Lyric video for a kween</i></a>
+    <a href="mediummessage.html"><i><span>► Next:</span> An exploration of mediums</i></a>
+</nav>
+<h2 class="intro2">Sakanaya Fish Market</h2>
+ <div class="intro">
+        <p class="intro1">Brand identidy</p>
+        <div id="slider">   
+            <img src="images/sakanaya/sakanayalogoheading 2.gif" width="100%" id="slide">
+            <div class="buttons">
+            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
+            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
+        </div>
+    </div>
+           
+        <p class="visible4">
+            <i> see info</i> 
+         </p>
+         <div class="invisible4 hide">
+                  <p>Various Mediums <br>Art direction, strategy</p>
+                  <p class="intro3">Branding identidy for a local Japanese fish market. 
+                    The identity is playful and flexible while the mark itself gives room for play. The logo orginates from the idea of a cat and tuna. 
+                    A Japanese lineage with a touch of western ideas.</p></div>
+
+</div>
+<nav>
+
+</nav>
+</body>
+</html>

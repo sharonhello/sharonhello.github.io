@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+ 
+    $(function() {
+	$(".visible4").click(function() {
+	    $('.invisible4').toggleClass("show");
+	  });  
+	});
+
+    var i = 0,images = ["images/goggin/gogginposter_06.png",
+    "images/goggin/Comp 1.gif",
+    "images/goggin/gogginposter_07.png",
+    "images/goggin/gogginposter_02.jpg",
+    "images/goggin/eventphoto_02.JPG",
+    "images/goggin/eventphoto.JPG",
+ 
+                             ];
+                            
+          function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
+
+
+
+    </script>
+    <title>poster 4 goggin</title>
+</head>
+<body>
+    <header class="workheader">
+<h2><a href="index.html">Sharon Zhong</a></h2>
+<h2><a href="about.html">About & Contact</a></h2>
+    </header>
+    <nav class="contentnav">
+            <a href="wttdt.html"><i><span>◄ Prev:</span> Welcome to the Digital Times</i></a>
+
+    <a href="maskglovessoap.html"><i><span>► Next:</span> Lyric video for a kween</i></a>
+</nav>
+<h2 class="intro2">Pop Culture Colour Theory Lecture Poster</h2>
+ <div class="intro">
+        <p class="intro1">Poster design, projection mapping</p>
+        <div id="slider">   
+            <img src="images/goggin/gogginposter_06.png" width="100%" id="slide">
+            <div class="buttons">
+            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
+            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
+        </div>
+    </div>
+           
+        <p class="visible4">
+            <i> see info</i> 
+         </p>
+         <div class="invisible4 hide">
+                  <p>24" x 36" inkjet on matte coated paper <br>Event, video</p>
+                  <p class="intro3">Lecture poster for <a href="https://www.practise.co.uk/" target="_blank">James Goggin</a>’s <i>Pop Culture Colour Thoery</i> lecture & performance. The poster also has a digital 
+                      component that was projected onto the poster itself for a week on display. Social media visuals were also created for the event. Special thanks to BU faculty, Mary Yang for making it happen!<br>
+                      <br>
+                      event details: <a href="http://www.bu.edu/phpbin/calendar/event.php?id=238790&cid=20&oid=0" target="_blank">Here.</a></p>
+                      
+                    </div>
+
+</div>
+<nav>
+
+</nav>
+</body>
+</html>
