@@ -1,7 +1,11 @@
 * {background-color: silver;}
 ::selection {color: white; background: red;}
 /* info page */
-
+@font-face{
+    font-family: 'algebra';
+    src: url(fonts/Algebra-Regular.otf);
+    font-style: normal;
+}
 .index {font-size: 18px;line-height: 6mm; margin: 100px 0 0 20px;}
 header {margin: 0 20px;}
 
