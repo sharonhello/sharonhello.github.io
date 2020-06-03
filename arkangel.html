@@ -21,28 +21,10 @@
     "images/arkangelwreck/arkangel_07.JPG",
     "images/arkangelwreck/arkangel_10.JPG",
     "images/arkangelwreck/arkangel_11.JPG",
- 
- 
-                             ];
+ ];
                             
-          function mySlide(param)
-          {
-              if(param === 'next')
-              {
-                  i++;
-                  if(i === images.length){ i = images.length - 1; }
-              }else{
-                  i--;
-                  if(i < 0){ i = 0; }
-              }
-              
-              document.getElementById('slide').src = images[i];
-          }
-
-
-
     </script>
-    <title>van's but sharon</title>
+    <title>arkangel x wreck</title>
 </head>
 <body>
     <header class="workheader">
@@ -77,8 +59,21 @@
                     </div>
 
 </div>
-<nav>
+<script>
+   function mySlide(param)
+          {
+              if(param === 'next')
+              {
+                  i++;
+                  if(i === images.length){ i = images.length - 1; }
+              }else{
+                  i--;
+                  if(i < 0){ i = 0; }
+              }
+              
+              document.getElementById('slide').src = images[i];
+          }
 
-</nav>
+</script>
 </body>
 </html>
