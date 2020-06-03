@@ -24,6 +24,7 @@ a:hover img {display: block; position: fixed; top: 20%; left: 22%;z-index: -1;}
 li {list-style: none;}
 li a {text-decoration: none;color: black;}
 li a:hover {color: red;text-shadow: 2px 2px 8px red;}
+
 /* see more info */
 
 .hide{display:none;}
@@ -33,7 +34,7 @@ li a:hover {color: red;text-shadow: 2px 2px 8px red;}
 .visible, .visible2, .visible3 {font-family: aileron; cursor: pointer;}
 .invisible, .invisible2, .invisible3, .about {font-family: algebra; cursor: pointer;}
 
-h1, h2{line-height: 3mm; font-family: aileron;}
+h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 
 
 
