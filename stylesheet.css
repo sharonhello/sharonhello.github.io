@@ -10,6 +10,7 @@ body {background-color: silver;}
     src: url(fonts/Aileron-Regular.otf);
     font-style: normal;
 }
+
 /* first page */
 .index {font-size: 18px;line-height: 6mm; margin: 100px 0 0 20px;}
 header {margin: 0 20px;}
@@ -25,13 +26,13 @@ li {list-style: none;}
 li a {text-decoration: none;color: black;}
 li a:hover {color: red;text-shadow: 2px 2px 8px red;}
 
-/* see more info */
+/* see more info (index page doesnt have 'appear on click') */
 
 .hide{display:none;}
 .show{display:block;}
 
 
-.visible, .visible2, .visible3 {font-family: aileron; cursor: pointer;}
+.index p {font-family: aileron;}
 .invisible, .invisible2, .invisible3, .about {font-family: algebra; cursor: pointer;}
 
 h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
@@ -83,7 +84,7 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 @media only screen and (max-width: 768px)
 {
     a img {display: none;}
-a:hover img {display: block; position: fixed; top: 20%; left: 10%;z-index: -1;}
+a:hover img {display: block; position: fixed; top: 20%; left: 10%;z-index: -1; width: 60%;}
 .visible4 {margin-left:0;}
 .invisible4 {width: 400px;font-family: algebra;margin-left: 0; }
 .workheader h2 {margin-right: 30px; font-size: 15px;}
