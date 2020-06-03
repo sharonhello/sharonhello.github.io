@@ -6,6 +6,11 @@
     src: url(fonts/Algebra-Regular.otf);
     font-style: normal;
 }
+@font-face{
+    font-family: 'aileron';
+    src: url(fonts/Aileron-Light.otf);
+    font-style: light;
+}
 .index {font-size: 18px;line-height: 6mm; margin: 100px 0 0 20px;}
 header {margin: 0 20px;}
 
