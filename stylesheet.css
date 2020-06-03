@@ -1,6 +1,5 @@
 * {background-color: silver;}
 ::selection {color: white; background: red;}
-/* info page */
 @font-face{
     font-family: 'algebra';
     src: url(fonts/Algebra-Regular.otf);
@@ -11,6 +10,7 @@
     src: url(fonts/Aileron-Regular.otf);
     font-style: normal;
 }
+/* first page */
 .index {font-size: 18px;line-height: 6mm; margin: 100px 0 0 20px;}
 header {margin: 0 20px;}
 
@@ -24,9 +24,11 @@ a:hover img {display: block; position: fixed; top: 20%; left: 22%;z-index: -1;}
 li {list-style: none;}
 li a {text-decoration: none;color: black;}
 li a:hover {color: red;text-shadow: 2px 2px 8px red;}
+/* see more info */
 
 .hide{display:none;}
 .show{display:block;}
+
 
 .visible, .visible2, .visible3 {font-family: aileron; cursor: pointer;}
 .invisible, .invisible2, .invisible3, .about {font-family: algebra; cursor: pointer;}
@@ -35,7 +37,9 @@ h1, h2{line-height: 3mm; font-family: aileron;}
 
 
 
-/* contentpages */
+/* all the contentpages */
+
+/* content nav */
 
 .contentnav a:hover {color: red;text-shadow: 2px 2px 8px red;}
 .workheader {display: flex; font-family: aileron;margin: 0 20px; }
@@ -47,6 +51,8 @@ h1, h2{line-height: 3mm; font-family: aileron;}
 .contentnav span {font-family: aileron; font-size: 22px;}
 
 .intro {width: 80%; margin: auto auto;}
+
+/* appear on click */
 .intro1 {text-align: center;font-family: algebra;}
 .intro2 {font-family: aileron; font-size: 40px;line-height: 9mm;text-align: center;}
 .visible4:hover {text-decoration: underline;}
@@ -56,7 +62,7 @@ h1, h2{line-height: 3mm; font-family: aileron;}
 
 .buttons {display:flex;justify-content: space-between; font-size: 30px; cursor: pointer;}
 
-/* medium part*/
+/* the medium is the message page*/
 
 .section2 img {padding: 5px;}
 
