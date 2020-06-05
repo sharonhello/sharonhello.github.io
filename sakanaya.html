@@ -13,31 +13,33 @@
 	    $('.invisible4').toggleClass("show");
 	  });  
 	});
+    
+    var slideIndex = 1;
+showSlides(slideIndex);
 
-    var i = 0,images = ["images/sakanaya/sakanayalogoheading 2.gif",
-    "images/sakanaya/saknayamark.png",
-    "images/sakanaya/letterhead.png",
-    "images/sakanaya/sakanayabusinesscards1.png", 
-    "images/sakanaya/kitchen.png", 
-    "images/sakanaya/shirts.png",
-    "images/sakanaya/sakanaya_billboard.jpg",
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-                             ];
-                            
-          function mySlide(param)
-          {
-              if(param === 'next')
-              {
-                  i++;
-                  if(i === images.length){ i = images.length - 1; }
-              }else{
-                  i--;
-                  if(i < 0){ i = 0; }
-              }
-              
-              document.getElementById('slide').src = images[i];
-          }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
 
 
     </script>
@@ -55,12 +57,51 @@
 <h2 class="intro2">Sakanaya Fish Market</h2>
  <div class="intro">
         <p class="intro1">Brand identidy</p>
-        <div id="slider">   
-            <img src="images/sakanaya/sakanayalogoheading 2.gif" width="100%" id="slide">
-            <div class="buttons">
-            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
-            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
-        </div>
+       
+        <div class="slideshow-container">
+            <div class="mySlides">
+              <img src="images/sakanaya/sakanayalogoheading 2.gif" style="width:100%">
+            </div>
+          
+            <div class="mySlides noshow">
+              <img src="images/sakanaya/saknayamark.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides noshow">
+                <img src="images/sakanaya/letterhead.png" style="width:100%">
+              </div>
+              <div class="mySlides noshow">
+                <img src="images/sakanaya/sakanayabusinesscards1.png" style="width:100%">
+              </div>
+              <div class="mySlides noshow">
+                <img src="images/sakanaya/kitchen.png" style="width:100%">
+              </div>
+              <div class="mySlides noshow">
+                <img src="images/sakanaya/shirts.png" style="width:100%">
+              </div>
+              <div class="mySlides noshow">
+                <img src="images/sakanaya/sakanaya_billboard.jpg" style="width:100%">
+              </div>
+
+            <div class="bttns">
+            <a class="prev" onclick="plusSlides(-1)">◄</a>
+            <a class="next" onclick="plusSlides(1)">►</a>
+            </div>
+            
+          </div>
+        
+        
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+          </div>
     </div>
            
         <p class="visible4">

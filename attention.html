@@ -13,32 +13,32 @@
 	  });  
 	});
 
-    var i = 0,images = ["images/attention/attentiondistraction.png",
-    "images/attention/attention&distraction_interior_00.JPG",
-    "images/attention/attention&distraction_interior_01.JPG",
-    "images/attention/attention&distraction_interior_02.JPG",
-    "images/attention/attention&distraction_interior_04.JPG",
-    "images/attention/attention&distraction_interior_05.JPG",
-    "images/attention/attention&distraction_interior_06.JPG",
-    "images/attention/attention&distraction_interior_07.JPG",
-    "images/attention/attention&distraction_interior_08.JPG",
-    "images/attention/attention&distraction_interior_09.JPG",];
-                            
-          function mySlide(param)
-          {
-              if(param === 'next')
-              {
-                  i++;
-                  if(i === images.length){ i = images.length - 1; }
-              }else{
-                  i--;
-                  if(i < 0){ i = 0; }
-              }
-              
-              document.getElementById('slide').src = images[i];
-          }
+    var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
 
     </script>
     <title>attention & distraction</title>
@@ -56,12 +56,69 @@
 <h2 class="intro2">Attention & Distraction Research Book</h2>
  <div class="intro">
         <p class="intro1">Editorial design</p>
-        <div id="slider">   
-            <img src="images/attention/attentiondistraction.png" width="100%" id="slide">
-            <div class="buttons">
-            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
-            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
-        </div>
+ 
+        <div class="slideshow-container">
+            <div class="mySlides">
+              <img src="images/attention/attentiondistraction.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides noshow">
+              <img src="images/attention/attention&distraction_interior_00.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides noshow">
+                <img src="images/attention/attention&distraction_interior_01.JPG" style="width:100%">
+              </div>
+            
+              <div class="mySlides noshow">
+                <img src="images/attention/attention&distraction_interior_02.JPG" style="width:100%">
+              </div>
+           
+             <div class="mySlides noshow">
+              <img src="images/attention/attention&distraction_interior_04.JPG" style="width:100%">
+            </div>
+          
+            <div class="mySlides noshow">
+              <img src="images/attention/attention&distraction_interior_05.JPG" style="width:100%">
+            </div>
+            <div class="mySlides noshow">
+                <img src="images/attention/attention&distraction_interior_06.JPG" style="width:100%">
+              </div>
+            
+              <div class="mySlides noshow">
+                <img src="images/attention/attention&distraction_interior_07.JPG" style="width:100%">
+              </div>
+
+              <div class="mySlides noshow">
+                <img src="images/attention/attention&distraction_interior_08.JPG" style="width:100%">
+              </div>
+            
+              <div class="mySlides noshow">
+                <img src="images/attention/attention&distraction_interior_09.JPG" style="width:100%">
+              </div>
+
+            <div class="bttns">
+            <a class="prev" onclick="plusSlides(-1)">◄</a>
+            <a class="next" onclick="plusSlides(1)">►</a>
+            </div>
+            
+          </div>
+        
+        
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span> 
+            <span class="dot" onclick="currentSlide(10)"></span> 
+          </div>
     </div>
            
         <p class="visible4">
