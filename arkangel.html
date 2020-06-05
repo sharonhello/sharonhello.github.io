@@ -14,12 +14,32 @@
 	  });  
 	});
 
-    var i = 0,images = ["images/arkangelwreck/arkangel_01.JPG",
-    "images/arkangelwreck/arkangel_05.jpg",
-    "images/arkangelwreck/arkangel_07.JPG",
-    "images/arkangelwreck/arkangel_10.JPG",
-    "images/arkangelwreck/arkangel_11.JPG",
- ];
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
                             
     </script>
     <title>arkangel x wreck</title>
@@ -37,13 +57,46 @@
 <h2 class="intro2">Arkangel x Wreck</h2>
  <div class="intro">
         <p class="intro1">Postcards, print</p>
-        <div id="slider">   
-            <img src="images/arkangelwreck/arkangel_01.JPG" width="100%" id="slide">
-            <div class="buttons">
-            <p onclick="mySlide('prev');" class="slidebutton prev">◄</p>
-            <p onclick="mySlide('next');"class="slidebutton next">►</p>  
-        </div>
+       
+        <div class="slideshow-container">
+            <div class="mySlides">
+              <img src="images/arkangelwreck/arkangel_01.JPG" style="width:100%">
+            </div>
+          
+            <div class="mySlides noshow">
+              <img src="images/arkangelwreck/arkangel_05.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides noshow">
+                <img src="images/arkangelwreck/arkangel_07.JPG" style="width:100%">
+              </div>
+              <div class="mySlides noshow">
+                <img src="images/arkangelwreck/arkangel_10.JPG" style="width:100%">
+              </div>
+              <div class="mySlides noshow">
+                <img src="images/arkangelwreck/arkangel_11.JPG" style="width:100%">
+              </div>
+                 
+
+            <div class="bttns">
+            <a class="prev" onclick="plusSlides(-1)">◄</a>
+            <a class="next" onclick="plusSlides(1)">►</a>
+            </div>
+            
+          </div>
+        
+        
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+          </div>
     </div>
+           
         <p class="visible4">
             <i> see info</i> 
          </p>
@@ -57,21 +110,6 @@
                     </div>
 
 </div>
-<script>
-   function mySlide(param)
-          {
-              if(param === 'next')
-              {
-                  i++;
-                  if(i === images.length){ i = images.length - 1; }
-              }else{
-                  i--;
-                  if(i < 0){ i = 0; }
-              }
-              
-              document.getElementById('slide').src = images[i];
-          }
 
-</script>
 </body>
 </html>
