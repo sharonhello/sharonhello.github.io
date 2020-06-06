@@ -10,7 +10,7 @@ body {background-color: silver;}
     src: url(fonts/Aileron-Regular.otf);
     font-style: normal;
 }
-a {text-decoration: none;}
+a {text-decoration: none; color: red;text-shadow: 2px 2px 8px red;}
 
 /* first page */
 .index {font-size: 18px;line-height: 6mm; margin: 100px 0 0 20px;}
