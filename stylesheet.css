@@ -123,4 +123,5 @@ a:hover img {display: block; position: fixed; top: 20%; left: 10%;z-index: -1; w
   .active, .dot:hover {
     background-color: #ff1c1c;
   }
+  .about {font-family: marr sans;font-size: 18px;}
   
