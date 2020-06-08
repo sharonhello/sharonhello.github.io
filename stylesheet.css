@@ -1,4 +1,4 @@
-body {background-color: silver;}
+
 ::selection {color: white; background: red;}
 @font-face{
     font-family: 'algebra';
