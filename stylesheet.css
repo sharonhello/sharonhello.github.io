@@ -6,17 +6,18 @@
     font-style: normal;
 }
 @font-face{
-    font-family: 'aileron';
-    src: url(fonts/Aileron-Regular.otf);
+    font-family: 'marr sans';
+    src: url(MarrSans-Regular.otf);
     font-style: normal;
-}
+} 
 a {text-decoration: none;color: red;}
 a:hover {text-shadow: 2px 2px 8px red;}
 /* first page */
 .index {font-size: 18px;line-height: 6mm; margin: 100px 0 0 20px;}
 header {margin: 0 20px;}
 
-.shortbio {font-size: 20px;font-family: aileron;width: 400px;}
+.shortbio {font-size: 20px;font-family: marr sans;
+  width: 400px;}
 
 header a {text-decoration: none; color: black;}
 header a:hover {color: red;text-shadow: 2px 2px 8px red;}
@@ -33,10 +34,10 @@ li a:hover {color: red;text-shadow: 2px 2px 8px red;}
 .show{display:block;}
 
 
-.index p {font-family: aileron;}
+.index p {font-family: marr sans;}
 .invisible, .invisible2, .invisible3, .about {font-family: algebra; cursor: pointer;}
 
-h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
+h1, h2{line-height: 3mm; font-family: marr sans;font-weight: normal;}
 
 
 
@@ -45,19 +46,19 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 /* content nav */
 
 .contentnav a:hover {color: red;text-shadow: 2px 2px 8px red;}
-.workheader {display: flex; font-family: aileron;margin: 0 20px; }
+.workheader {display: flex; font-family: marr sans;margin: 0 20px; }
 .workheader h2 {margin-right: 40px;}
 
 
 .contentnav {display: flex; justify-content: space-between; font-size: 25px;margin: 0 20px;}
-.contentnav a {text-decoration: none; color: black;font-family: algebra; width: 300px;}
-.contentnav span {font-family: aileron; font-size: 22px;}
+.contentnav a {text-decoration: none; color: black;font-family: marr sans; width: 300px;}
+.contentnav span {font-family: marr sans;}
 
 .intro {width: 80%; margin: auto auto;}
 
 /* appear on click */
 .intro1 {text-align: center;font-family: algebra;}
-.intro2 {font-family: aileron; font-size: 40px;line-height: 9mm;text-align: center;}
+.intro2 {font-family: marr sans; font-size: 40px;line-height: 9mm;text-align: center;}
 .visible4:hover {text-decoration: underline;}
 .visible4 {font-size: 30px;font-family: aileron; margin-left: 15%;cursor: pointer;}
 .invisible4 {width: 700px;margin-left: 15%;font-family: algebra; }
@@ -71,7 +72,7 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 
 .aboutheader {margin-top: 30px;}
 .aboutheader h2 {display: inline;margin: 0 20px 0 0;}
-.bioaboutpage {width: 70%; font-family: aileron; font-size: 20px;margin: auto auto;}
+.bioaboutpage {width: 70%; font-family: marr sans; font-size: 20px;margin: auto auto;}
 
 .reading {margin: 30px 0 100px 0;}
 .reading p {font-size: 15px; margin-left: 50px;}
