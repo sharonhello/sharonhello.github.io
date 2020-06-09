@@ -6,9 +6,9 @@
     font-style: normal;
 }
 @font-face{
-    font-family: 'marr sans';
-    src: url(MarrSans-Regular.otf);
-    font-style: normal;
+    font-family: 'aileron';
+    src: url(Aileron-Light.otf);
+    font-style: light;
 } 
 a {text-decoration: none;color: red;}
 a:hover {text-shadow: 2px 2px 8px red;}
@@ -16,13 +16,12 @@ a:hover {text-shadow: 2px 2px 8px red;}
 .index {font-size: 18px;line-height: 6mm; margin: 100px 0 0 20px;}
 header {margin: 0 20px;}
 
-.shortbio {font-size: 20px;font-family: marr sans;
+.shortbio {font-size: 20px;font-family: aileron;
   width: 400px;}
 
 header a {text-decoration: none; color: black;}
 header a:hover {color: red;text-shadow: 2px 2px 8px red;}
-a img {display: none;}
-a:hover img {display: block; position: fixed; top: 20%; left: 22%;z-index: -1;}
+
 
 li {list-style: none;}
 li a {text-decoration: none;color: black;}
@@ -34,10 +33,10 @@ li a:hover {color: red;text-shadow: 2px 2px 8px red;}
 .show{display:block;}
 
 
-.index p {font-family: marr sans;}
+.index p {font-family: aileron;}
 .invisible, .invisible2, .invisible3, .about {font-family: algebra; cursor: pointer;}
 
-h1, h2{line-height: 3mm; font-family: marr sans;font-weight: normal;}
+h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 
 
 
@@ -46,19 +45,19 @@ h1, h2{line-height: 3mm; font-family: marr sans;font-weight: normal;}
 /* content nav */
 
 .contentnav a:hover {color: red;text-shadow: 2px 2px 8px red;}
-.workheader {display: flex; font-family: marr sans;margin: 0 20px; }
-.workheader h2 {margin-right: 40px;}
+.workheader {display: flex; font-family: aileron;justify-content: space-between;margin: 0 40px;}
 
 
-.contentnav {display: flex; justify-content: space-between; font-size: 25px;margin: 0 20px;}
-.contentnav a {text-decoration: none; color: black;font-family: marr sans; width: 300px;}
-.contentnav span {font-family: marr sans;}
 
-.intro {width: 80%; margin: auto auto;}
+.contentnav { font-size: 20px;margin: 0 40px;margin-bottom: 70px;}
+.contentnav a {text-decoration: none; color: black;font-family: algebra; width: 300px;}
+.contentnav span {font-family: aileron;}
+
+.intro {width: 70%; margin: auto auto;}
 
 /* appear on click */
 .intro1 {text-align: center;font-family: algebra;}
-.intro2 {font-family: marr sans; font-size: 40px;line-height: 9mm;text-align: center;}
+.intro2 {font-family: aileron; font-size: 40px;line-height: 9mm;text-align: center;}
 .visible4:hover {text-decoration: underline;}
 .visible4 {font-size: 30px;font-family: aileron; margin-left: 15%;cursor: pointer;}
 .invisible4 {width: 700px;margin-left: 15%;font-family: algebra; }
@@ -72,7 +71,7 @@ h1, h2{line-height: 3mm; font-family: marr sans;font-weight: normal;}
 
 .aboutheader {margin-top: 30px;}
 .aboutheader h2 {display: inline;margin: 0 20px 0 0;}
-.bioaboutpage {width: 70%; font-family: marr sans; font-size: 20px;margin: auto auto;}
+.bioaboutpage {width: 70%; font-family: aileron; font-size: 20px;margin: auto auto;}
 
 .reading {margin: 30px 0 100px 0;}
 .reading p {font-size: 15px; margin-left: 50px;}
@@ -83,11 +82,12 @@ h1, h2{line-height: 3mm; font-family: marr sans;font-weight: normal;}
 
 @media only screen and (max-width: 768px)
 {
+  .intro {width: 90%; margin: auto auto;}
     a img {display: none;}
 a:hover img {display: block; position: fixed; top: 20%; left: 10%;z-index: -1; width: 60%;}
 .visible4 {margin-left:0;}
 .invisible4 {width: 400px;font-family: algebra;margin-left: 0; }
-.workheader h2 {margin-right: 30px; font-size: 15px;}
+
 .contentnav a {text-decoration: none; color: black;font-family: algebra; width: 250px; font-size: 20px;}
 }
 
@@ -111,8 +111,9 @@ a:hover img {display: block; position: fixed; top: 20%; left: 10%;z-index: -1; w
   /* The dots/bullets/indicators */
   .dot {
     cursor:pointer;
-    height: 13px;
-    width: 13px;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
     background-color: black;
   
@@ -123,5 +124,10 @@ a:hover img {display: block; position: fixed; top: 20%; left: 10%;z-index: -1; w
   .active, .dot:hover {
     background-color: #ff1c1c;
   }
-  .about {font-family: marr sans;font-size: 18px;}
-  
+  .about {font-family: aileron;font-size: 18px;}
+  .imgbreak img{margin-bottom: 40px;}
+  .index {position: fixed; left:30px; top: 150px;}
+  .background {float: right; width: 450px;}
+  .background img {width: 450px;float: right;margin: 40px;}
+  .heading {position: fixed; left: 30px;top: 10px;}
+  .bioaboutpage {margin-top:200px;}
