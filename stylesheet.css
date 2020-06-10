@@ -75,7 +75,10 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: 200;}
   .bioaboutpage {margin-top:200px;}
 
   @media only screen and (max-width: 768px)
-  {
+  { .index{position: relative;left: 0px;top: 0px;}
+  .background img {display: none;}
+  .heading{position: relative;left: -10px;}
+  .heading h2 {font-size: 20px;}
     .intro {width: 90%; margin: auto auto;}
     .workheader {width: 90%; margin: auto auto;}
     .workheader h2{font-size: 20px;}
@@ -83,7 +86,8 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: 200;}
   .invisible4 {width: 400px;}
     }
     @media only screen and (max-width: 375px)
-    {
+    {.shortbio {width: 90%;font-size: 20px;}
   .invisible4 {width: 280px;}
+  .bioaboutpage{width: 90%; margin: auto auto;}
       }
   
