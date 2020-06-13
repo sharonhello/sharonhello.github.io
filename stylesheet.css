@@ -24,7 +24,7 @@ li a:hover {color: red;text-shadow: 2px 2px 8px red;}
 .show{display:block;}
 .index p {font-family: aileron;}
 .invisible, .invisible2, .invisible3, .about {font-family: algebra; cursor: pointer;}
-h1, h2{line-height: 3mm; font-family: aileron;}
+h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 /* all the contentpages */
 /* content nav */
 .contentnav a:hover {color: red;text-shadow: 2px 2px 8px red;}
