@@ -1,5 +1,6 @@
 
 ::selection {color: white; background: red;}
+
 @font-face{
     font-family: 'algebra';
     src: url(fonts/Algebra-Regular.otf);
@@ -11,8 +12,9 @@
 a {text-decoration: none;color: red;}
 a:hover {text-shadow: 2px 2px 8px red;}
 /* first page */
-.index {font-size: 18px;line-height: 6mm; margin: 100px 0 0 20px;}
+.index {font-size: 18px;line-height: 6mm; margin: 70px 0 0 40px;float: left;}
 header {margin: 0 20px;}
+.heading2 {margin: 30px 40px;}
 .shortbio {font-size: 20px;font-family: aileron;width: 400px;}
 header a {text-decoration: none; color: black;}
 header a:hover {color: red;text-shadow: 2px 2px 8px red;}
@@ -28,8 +30,9 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 /* all the contentpages */
 /* content nav */
 .contentnav a:hover {color: red;text-shadow: 2px 2px 8px red;}
+.heading{margin: 0 40px;display: block;float: left;}
 .workheader {display: flex; font-family: aileron;justify-content: space-between;margin: 0 40px;}
-.contentnav { font-size: 20px;margin: 0 40px;margin-bottom: 70px;}
+.contentnav { font-size: 20px;margin: 50px 40px;margin-bottom: 80px;}
 .contentnav a {text-decoration: none; color: black;font-family: algebra; width: 300px;}
 .contentnav span {font-family: aileron;}
 .intro {width: 70%; margin: auto auto;}
@@ -68,16 +71,16 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
   .active, .dot:hover {background-color: #ff1c1c;}
   .about {font-family: aileron;font-size: 18px;;}
   .imgbreak img{margin-bottom: 40px;}
-  .index {position: fixed; left:30px; top: 150px;}
+
   .background {float: right; width: 450px;}
   .background img {width: 450px;float: right;margin: 40px;}
-  .heading {position: fixed; left: 30px;top: 10px;}
+.delet{position: relative;top: 200px;left: 40px;}
   .bioaboutpage {margin-top:200px;}
 
   @media only screen and (max-width: 768px)
   { .index{position: relative;left: 0px;top: 0px;}
   .background img {display: none;}
-  .heading{position: relative;left: -10px;}
+
   .heading h2 {font-size: 20px;}
     .intro {width: 90%; margin: auto auto;}
     .workheader {width: 90%; margin: auto auto;}
