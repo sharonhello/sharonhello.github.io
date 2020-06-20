@@ -1,4 +1,6 @@
-let poem = `Orginally from Queens NY, shes likes to spend hours at a time in coffee shops, visit cool bars, and go to artist talks. Sharon spent her freshamsn year studiing enviornmental science before switching over to study gd. She has love for independent publications and paper, and is looking for a more mix discipline approach to design; and also wishes to do more coding in the future. `
+let poem = `Orginally from Queens NY, she likes to spend hours at a time in coffee shops, visit cool bars, and play with animals. 
+Sharon spent her freshamsn year studing enviornmental science before switching over to study gd. 
+She is intrested in the mix disicplines, and her work aims to be inbetween the spaces of art and design. The name Little Sharon refers to the facts that she is very short in height. `
 let n = 0
 let prevX, prevY
 let canvus;

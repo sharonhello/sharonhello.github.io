@@ -65,6 +65,7 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 .delet{position: relative;top: 200px;left: 40px;}
 .bio {width: 70%; margin: auto auto;font-family: aileron;font-size: 20px;margin-top: 100px;}
 .bio img {margin-right: 10px;}
+.projects{font-family: algebra; }
 .background {float: right;margin-top: 70px;}
 .background img{width: 700px;display: block;margin-bottom: 20px;}
   @media only screen and (max-width: 768px)
