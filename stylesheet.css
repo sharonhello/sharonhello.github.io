@@ -1,5 +1,6 @@
 
 ::selection {color: white; background: red;}
+* {font-family: aileron;}
 @font-face{
     font-family: 'algebra';
     src: url(fonts/Algebra-Regular.otf);
@@ -25,15 +26,15 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 .contentnav a:hover {color: red;text-shadow: 2px 2px 8px red;}
 .workheader {display: flex; font-family: aileron;justify-content: space-between;margin: 0 40px;}
 .contentnav { font-size: 20px;margin: 50px 40px;margin-bottom: 80px;}
-.contentnav a {text-decoration: none; color: black;font-family: algebra; width: 300px;}
+.contentnav a {text-decoration: none; color: black;width: 300px;}
 .contentnav span {font-family: aileron;}
 .intro {width: 70%; margin: auto auto;}
 /* appear on click */
-.intro1 {text-align: center;font-family: algebra;}
+.intro1 {text-align: center;}
 .intro2 {font-family: aileron; font-size: 40px;line-height: 9mm;text-align: center;}
 .visible4:hover {text-decoration: underline;}
 .visible4 {font-size: 30px;font-family: aileron; margin-left: 15%;cursor: pointer;}
-.invisible4 {width: 700px;margin-left: 15%;font-family: algebra; }
+.invisible4 {width: 700px;margin-left: 15%; }
 .intro3 {text-indent: 5em;  font-size: 22px;line-height: 8mm;}
 /* the medium is the message page*/
 .section2 img {padding: 5px;}
@@ -84,4 +85,3 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
   .moreinfo {display: block;}
   .invisible4 {width: 280px;}
 }
-  
