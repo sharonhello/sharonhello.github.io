@@ -1,6 +1,5 @@
 
 ::selection {color: white; background: red;}
-
 @font-face{
     font-family: 'algebra';
     src: url(fonts/Algebra-Regular.otf);
@@ -12,7 +11,6 @@
 a {text-decoration: none;color: red;}
 a:hover {text-shadow: 2px 2px 8px red;}
 /* first page */
-
 header a {text-decoration: none; color: black;}
 header a:hover {color: red;text-shadow: 2px 2px 8px red;}
 li {list-style: none;}
@@ -21,12 +19,10 @@ li a:hover {color: red;text-shadow: 2px 2px 8px red;}
 /* see more info (index page doesnt have 'appear on click') */
 .hide{display:none;}
 .show{display:block;}
-
 h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 /* all the contentpages */
 /* content nav */
 .contentnav a:hover {color: red;text-shadow: 2px 2px 8px red;}
-
 .workheader {display: flex; font-family: aileron;justify-content: space-between;margin: 0 40px;}
 .contentnav { font-size: 20px;margin: 50px 40px;margin-bottom: 80px;}
 .contentnav a {text-decoration: none; color: black;font-family: algebra; width: 300px;}
@@ -41,7 +37,6 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
 .intro3 {text-indent: 5em;  font-size: 22px;line-height: 8mm;}
 /* the medium is the message page*/
 .section2 img {padding: 5px;}
-
 /* bts */
 .bts {width: 90%; margin: auto auto; margin-bottom: 100px; }
 /* Slideshow container */
@@ -58,10 +53,13 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
     margin: 0 2px;
     background-color: black;
     display: inline-block;
-    transition: background-color 0.6s ease;}
+    transition: background-color 0.6s ease;
+  }
   .active, .dot:hover {background-color: #ff1c1c;}
-.moreinfo {display: flex;justify-content: space-between;margin-top: 100px;}
-.index{width: 70%;margin: auto auto;font-family: aileron;font-size: 20px;position: fixed;top: 100px;left: 50px;}
+.moreinfo {display: flex;justify-content: space-between;margin-top: 100px;
+}
+.index{width: 70%;margin: auto auto;font-family: aileron;font-size: 20px;position: fixed;top: 100px;left: 50px;
+}
 .delet{position: relative;top: 200px;left: 40px;}
 .bio {width: 70%; margin: auto auto;font-family: aileron;font-size: 20px;margin-top: 100px;}
 .bio img {margin-right: 10px;}
@@ -71,7 +69,6 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
   @media only screen and (max-width: 768px)
   { 
   .background img {display: none;}
-
   .heading h2 {font-size: 20px;}
     .intro {width: 90%; margin: auto auto;}
     .workheader {width: 90%; margin: auto auto;}
@@ -79,12 +76,12 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
     .contentnav{width: 90%; margin: auto auto;}
   .invisible4 {width: 400px;}
   .bio{width:90%;margin: auto auto; }
-  .index{width: 90%;margin: auto auto;}
+  .index{width: 90%;position: relative;top: 50px;left: 10px;}
+
     }
     @media only screen and (max-width: 375px)
-    {.moreinfo {display: block;}
+    {
+  .moreinfo {display: block;}
   .invisible4 {width: 280px;}
-
-
-      }
+}
   
