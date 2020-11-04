@@ -85,3 +85,6 @@ h1, h2{line-height: 3mm; font-family: aileron;font-weight: normal;}
   .moreinfo {display: block;}
   .invisible4 {width: 280px;}
 }
+.newspaper{width: 70%; margin: auto auto;}
+.news img{max-width: 100%;}
+.news {display: inline-block;width: 49%;}
